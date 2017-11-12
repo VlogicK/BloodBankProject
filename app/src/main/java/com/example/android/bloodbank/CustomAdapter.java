@@ -1,10 +1,13 @@
 package com.example.android.bloodbank;
 
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -24,6 +27,7 @@ public class CustomAdapter extends BaseAdapter implements View.OnClickListener {
             TextView name;
             TextView address;
             TextView phone;
+            ImageView call,navigate,share;
 
     }
 
@@ -63,9 +67,26 @@ public class CustomAdapter extends BaseAdapter implements View.OnClickListener {
             convertView= LayoutInflater.from(mContext).inflate(R.layout.list_view_layout,null);
             viewHolder=new ViewHolder();
 
+            TextView name=(TextView)convertView.findViewById(R.id.nameTextView);
+            EditText address=(EditText)convertView.findViewById(R.id.addressEditText);
+            TextView phone=(TextView)convertView.findViewById(R.id.phoneTextView);
+            ImageView call=(ImageView)convertView.findViewById(R.id.callNow);
+            ImageView navigate=(ImageView)convertView.findViewById(R.id.navigate);
+            ImageView share=(ImageView)convertView.findViewById(R.id.share);
 
+            viewHolder.name=name;
+            viewHolder.address=address;
+            viewHolder.phone=phone;
+            viewHolder.call=call;
+            viewHolder.navigate=navigate;
+            viewHolder.share=share;
+
+            convertView.setTag(viewHolder);
 
         }
+
+        viewHolder=(ViewHolder)convertView.getTag();
+
 
 
 
