@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BloodBank</string>
+    <string name="BloodBN">B-</string>
+    <string name="BloodAN">A-</string>
+    <string name="BloodB">B+</string>
+    <string name="BloodO">O+</string>
+</resources>
