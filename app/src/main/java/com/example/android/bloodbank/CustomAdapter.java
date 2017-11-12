@@ -1,6 +1,7 @@
 package com.example.android.bloodbank;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -32,6 +33,7 @@ public class CustomAdapter extends BaseAdapter implements View.OnClickListener {
     }
 
 
+
     @Override
     public void onClick(View view) {
 
@@ -53,7 +55,24 @@ public class CustomAdapter extends BaseAdapter implements View.OnClickListener {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int position, View convertView, ViewGroup viewGroup) {
+
+        ViewHolder viewHolder;
+        if(convertView  == null){
+
+            convertView= LayoutInflater.from(mContext).inflate(R.layout.list_view_layout,null);
+            viewHolder=new ViewHolder();
+
+
+
+        }
+
+
+
+
+
+
+
         return null;
     }
 }
