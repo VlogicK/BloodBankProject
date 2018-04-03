@@ -9,12 +9,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <LinearLayout
+        <Button
+            android:id="@+id/dbc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:text="check" />
     </ScrollView>
 
     <Button
@@ -35,7 +38,7 @@
         style="@android:style/Widget.Material.Light.Button"
         android:layout_width="107dp"
         android:layout_height="110dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="244dp"
         android:layout_marginStart="60dp"
         android:text="@string/BloodB"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,14 +68,15 @@
         android:text="@string/BloodO"
         app:layout_constraintBottom_toBottomOf="@+id/button6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button6" />
+        app:layout_constraintTop_toTopOf="@+id/button6"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button6"
         style="@android:style/Widget.Material.Light.Button"
         android:layout_width="107dp"
         android:layout_height="110dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="124dp"
         android:layout_marginStart="240dp"
         android:text="O-"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,4 +94,34 @@
         app:layout_constraintBottom_toBottomOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="77dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="ADMINENTRY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ABpositive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="244dp"
+        android:layout_marginTop="488dp"
+        android:text="AB+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ABnegative"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginTop="488dp"
+        android:text="AB-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
